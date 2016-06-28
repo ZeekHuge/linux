@@ -9,7 +9,7 @@ DEBOOT="1.0.81"
 function run_build {
 	cd ${CHROOT_DIR}/${TRAVIS_BUILD_DIR}
 	make bb.org_defconfig
-	make -j8 CROSS_COMPILE=arm-linux-gnueabihf-
+	make -j12 CROSS_COMPILE=arm-linux-gnueabihf-
 }
 
 function run_package {
